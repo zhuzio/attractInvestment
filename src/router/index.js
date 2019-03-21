@@ -4,6 +4,8 @@ import HelloWorld from '@/components/HelloWorld'
 import index from '@/components/index/index'
 import attract from '@/components/attract/attract'
 import our from '@/components/our/our'
+import policyEncourage from '@/components/index/policyEncourage'
+import city from '@/components/index/city'
 
 Vue.use(Router)
 
@@ -19,14 +21,24 @@ export default new Router({
       component: index
     },
     {
-      path: '/attract', // 登录
+      path: '/attract', // 招商扶持
       name: 'attract',
       component: attract
     },
     {
-      path: '/our', // 登录
+      path: '/our', // 关于我们
       name: 'our',
       component: our
+    },
+    {
+      path: '/policyEncourage', // 政策鼓励
+      name: 'policyEncourage',
+      component: policyEncourage
+    },
+    {
+      path: '/city', // 一线形势
+      name: 'city',
+      component: city
     },
   ]
 })
