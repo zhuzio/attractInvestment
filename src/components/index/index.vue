@@ -23,13 +23,13 @@
               <p>一线形势</p>
             </li>
           </router-link>
-          <router-link to="">
+          <router-link to="/courseSystem">
             <li>
               <i class="icon icon-teach"></i>
-              <p>教育优势</p>
+              <p>课程体系</p>
             </li>
           </router-link>
-          <router-link to="">
+          <router-link to="/aboutProgram">
             <li>
               <i class="icon icon-code"></i>
               <p>关于编程</p>

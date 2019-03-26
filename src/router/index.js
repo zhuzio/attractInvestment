@@ -6,6 +6,8 @@ import attract from '@/components/attract/attract'
 import our from '@/components/our/our'
 import policyEncourage from '@/components/index/policyEncourage'
 import city from '@/components/index/city'
+import aboutProgram from '@/components/index/aboutProgram'
+import courseSystem from '@/components/index/courseSystem'
 
 Vue.use(Router)
 
@@ -40,5 +42,15 @@ export default new Router({
       name: 'city',
       component: city
     },
+    {
+      path: '/courseSystem', // 课程体系
+      name: 'courseSystem',
+      component: courseSystem
+    },
+    {
+      path: '/aboutProgram', // 关于编程
+      name: 'aboutProgram',
+      component: aboutProgram
+    }
   ]
 })

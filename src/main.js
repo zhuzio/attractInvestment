@@ -8,6 +8,7 @@ import 'mint-ui/lib/style.css'
 import './assets/less/base.less'
 import VueAwesomeSwiper from 'vue-awesome-swiper';
 import 'swiper/dist/css/swiper.css'
+import echarts from 'echarts'
 
 
 Vue.config.productionTip = false
