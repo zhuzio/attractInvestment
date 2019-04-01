@@ -35,7 +35,7 @@
               <p>关于编程</p>
             </li>
           </router-link>
-          <router-link to="">
+          <router-link to="/student">
             <li>
               <i class="icon icon-mien"></i>
               <p>学员风采</p>

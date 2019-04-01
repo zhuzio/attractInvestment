@@ -8,6 +8,7 @@ import policyEncourage from '@/components/index/policyEncourage'
 import city from '@/components/index/city'
 import aboutProgram from '@/components/index/aboutProgram'
 import courseSystem from '@/components/index/courseSystem'
+import student from '@/components/index/student'
 
 Vue.use(Router)
 
@@ -51,6 +52,11 @@ export default new Router({
       path: '/aboutProgram', // 关于编程
       name: 'aboutProgram',
       component: aboutProgram
+    },
+    {
+      path: '/student', // 学员风采
+      name: 'student',
+      component: student
     }
   ]
 })
