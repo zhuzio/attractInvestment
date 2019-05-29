@@ -4,6 +4,7 @@
         <a href="javascript:window.history.go(-1)"></a>学员风采
       </div>
       <vue-waterfall-easy :imgsArr="imgSrc" ></vue-waterfall-easy>
+      <p>这是分支2所提交的东西</p>
       <div class="student-container">
         <!--<img :src="i" alt="" v-for="(i, index) in imgSrc" :key="index">-->
        <!-- <img src="../../assets/image/student/1.jpg" alt="">
