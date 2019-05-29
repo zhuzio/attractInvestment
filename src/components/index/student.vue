@@ -5,7 +5,8 @@
       </div>
       <vue-waterfall-easy :imgsArr="imgSrc" ></vue-waterfall-easy>
       <p>这是分支2所提交的东西</p>
-      <p class="class222">这是Dev分支所提交的东西</p>
+      <p class="class111">这是Dev分支所提交的东西</p>
+      <p class="maker">这是maker 分支提交的东西</p>
       <div class="student-container">
         <!--<img :src="i" alt="" v-for="(i, index) in imgSrc" :key="index">-->
        <!-- <img src="../../assets/image/student/1.jpg" alt="">
