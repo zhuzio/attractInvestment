@@ -3,8 +3,10 @@
       <div class="moduleHead">
         <a href="javascript:window.history.go(-1)"></a>学员风采
       </div>
+      <vue-waterfall-easy :imgsArr="imgSrc" ></vue-waterfall-easy>
       <div class="student-container">
-        <img src="../../assets/image/student/1.jpg" alt="">
+        <!--<img :src="i" alt="" v-for="(i, index) in imgSrc" :key="index">-->
+       <!-- <img src="../../assets/image/student/1.jpg" alt="">
         <img src="../../assets/image/student/2.jpg" alt="">
         <img src="../../assets/image/student/3.jpg" alt="">
         <img src="../../assets/image/student/4.jpg" alt="">
@@ -20,8 +22,8 @@
         <img src="../../assets/image/student/14.jpg" alt="">
         <img src="../../assets/image/student/15.jpg" alt="">
         <img src="../../assets/image/student/16.jpg" alt="">
-        <img src="../../assets/image/student/17.jpg" alt="">
-<!--        <vue-waterfall-easy :imgsArr="imgsArr" @scrollReachBottom="getData"></vue-waterfall-easy>-->
+        <img src="../../assets/image/student/17.jpg" alt="">-->
+
       </div>
     </div>
 </template>
@@ -32,18 +34,27 @@
       name: "student",
       data () {
           return {
-
+            imgSrc:[],
+            link:'http://img.nyycstar.com/images/student/',
+            last:'.jpg'
           }
       },
       components: {
         vueWaterfallEasy
       },
       methods: {
+        getImgSrc() {
+          for (var i=1;i<=17;i++){
+            this.imgSrc.push(this.link+i+this.last);
+          }
+        }
       },
       mounted() {
+
       },
       created() {
-
+        this.getImgSrc();
+        // console.log(this.imgSrc)
       }
     }
 </script>
@@ -51,14 +62,20 @@
 <style scoped lang="less">
   .student-container{
     margin-top: 1rem;
-    display: flex;
+    /*display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    align-items: center;
+    align-items: center;*/
+   /* column-count: 2;
+    column-width: 3rem;
+    column-gap:.2rem;
+    width: 6.2rem;
+    padding: 0 .1rem;*/
     img{
       display: block;
-      width: 45%;
+      width:100%;
       height: auto;
+      margin-bottom: .2rem;
       /*position: absolute;*/
     }
   }
