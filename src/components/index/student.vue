@@ -7,6 +7,7 @@
       <p>这是分支2所提交的东西</p>
       <p class="class111">这是Dev分支所提交的东西</p>
       <p class="maker">这是maker 分支提交的东西</p>
+      <div>dev分支独立写的东西，测试maker分支是否能拉取到</div>
       <div class="student-container">
         <!--<img :src="i" alt="" v-for="(i, index) in imgSrc" :key="index">-->
        <!-- <img src="../../assets/image/student/1.jpg" alt="">
